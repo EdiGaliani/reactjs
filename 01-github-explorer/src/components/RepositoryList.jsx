@@ -5,7 +5,7 @@ export function RepositoryList() {
         <section className="repository-list">
             <h1>Lista de Repositório</h1>
             <ul>
-                <RepositoryItem />
+                <RepositoryItem title= "unform 2" />
                 <RepositoryItem />
                 <RepositoryItem />
                 <RepositoryItem />
