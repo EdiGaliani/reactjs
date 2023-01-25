@@ -1,12 +1,20 @@
+
+
 import logoImg from '../../assets/logo.png';
 import { Container, Content } from './Styles';
 
-export function Header() {
+interface HeaderProps {
+    onOpenNewTransactionModal: () => void;
+}
+
+export function Header({ onOpenNewTransactionModal }: HeaderProps) {
+    
+
     return (
         <Container>
             <Content>
                 <img src={logoImg} alt="Edi Money" />
-                <button type='button'>
+                <button type='button' onClick={onOpenNewTransactionModal}>
                     Nova Transação
                 </button>
             </Content>
